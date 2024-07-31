@@ -42,12 +42,14 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #eb3326;
   cursor: pointer;
   transition: border-color 0.25s;
+  box-shadow: 0 0 8px #ff7b00;
+  margin-right: 10px;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #000000;
 }
 button:focus,
 button:focus-visible {
@@ -113,7 +115,7 @@ p{
 
 .btn {
     cursor: pointer; 
-    border: solid rgb(255, 94, 0); 
+    border: solid #ff5e00; 
     font-family:monospace; 
     font-size: 13px; 
     color: rgb(255, 255, 255);
@@ -126,7 +128,8 @@ p{
       display:flex;
       justify-content: center; 
       align-items: center; --hover-bgc: #f02828; --hover-borderc: #ff0505;
-      float: left;
+      float:inline-start;
+      margin-right: 10px; 
 }
 
 

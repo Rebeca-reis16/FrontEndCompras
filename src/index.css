@@ -54,19 +54,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  
-  }
-}
+
 p{
   text-align: center;
   color: #ffffff;
@@ -74,3 +62,81 @@ p{
   font-size:larger
 
 }
+.form-container {
+  max-width: 800px;
+  margin: 20 auto;
+  padding: 80px;
+  background-color: #d1352a;
+  border-radius: 50px;
+  box-shadow: 0 0 8px rgb(255, 102, 0);
+}
+.form-group {
+  margin-bottom: 5px;
+}
+.form-group label {
+  display:grid;
+  color: #ffffff;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 17px;
+}
+.form-group input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ff5e00;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+                        
+@import url('https://fonts.googleapis.com/css2?Roboto&display=swap');
+
+.btn {
+    cursor: pointer; 
+    border: solid rgb(255, 94, 0); 
+    font-family:monospace; 
+    font-size: 13px; 
+    color: rgb(255, 255, 255);
+     padding: 9px 30px; 
+     transition: all 1352ms ease 0s; 
+     width: 38px;
+      box-shadow: rgba(255, 255, 255, 0) 0px 5px 25px 5px; 
+      border-radius: 25px; 
+      background: linear-gradient(90deg, rgb(255, 81, 0) 0%, rgb(247, 5, 57) 100%); --hover-width: 126px; 
+      display:flex;
+      justify-content: center; 
+      align-items: center; --hover-bgc: #f02828; --hover-borderc: #ff0505;
+      float: left;
+}
+
+
+.btn:hover{
+    
+color: rgb(255, 255, 255);
+width: 126px;
+background: rgb(240, 40, 40) none repeat scroll 0% 0% / auto padding-box border-box;
+border-color: rgb(255, 5, 5);
+border-width: 2px;
+border-style: solid;
+}
+

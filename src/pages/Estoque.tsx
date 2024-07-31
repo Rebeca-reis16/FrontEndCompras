@@ -49,30 +49,35 @@ export function Estoque() {
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
-                <div className="container bg-gray-300 mx-auto h-96 w-96">
-                    
-                    <label className='ml-12 text-black' htmlFor="nome">Nome do Estoque: </label>
-                    <input onChange={pegarNome} type="text" className='nome ml-1 mt-16 mb-4 border-none outline-0' name='nome' placeholder='Nome do estoque'/>
+            <form onSubmit={handleSubmit}  className="form-container"
+            > 
+
+                <div className="form-group">
+                    <label htmlFor="nome">Nome do Estoque: </label>
+                    <input onChange={pegarNome} type="text" className='nome  border-none outline-0' name='nome' placeholder='Nome do estoque'/>
+                    </div>
                     <br />
+                    <div className="form-group">
+                    <label htmlFor="localizacao">Descrição: </label>
+                    <input onChange={pegarDescrição} className='localizacao border-none  outline-0' type="text" name='localizacao' placeholder='Descrição'/>
+                    </div>
                     <br />
-                    <label className='ml-9 text-black' htmlFor="localizacao">Descrição: </label>
-                    <input onChange={pegarDescrição} className='localizacao border-none mb-4 outline-0' type="text" name='localizacao' placeholder='Descrição'/>
+                    <div className="form-group">
+                    <label  htmlFor="capacidade">Quantidade de produtos: </label>
+                    <input onChange={pegarqtda} className='capacidade  border-none outline-0' type="number" name='capacidade' placeholder='quantiade'/>
+                    </div>
                     <br />
-                    <br />
-                    <label className='ml-8 text-black' htmlFor="capacidade">Quantidade de produtos: </label>
-                    <input onChange={pegarqtda} className='capacidade mb-4 border-none outline-0' type="number" name='capacidade' placeholder='quantiade'/>
-                    <br />
-                    <br />
-                    <label className='ml-16 mr-1 text-black' htmlFor="responsavel">Fabricante: </label>
+                    <div className="form-group">
+                    <label  htmlFor="responsavel">Fabricante: </label>
                     <input onChange={pegarFabricante} className='responsavel border-none outline-0' type="text" name='responsavel' placeholder='Fabricante'/>
+                   </div>
                     <br />
-                    <br />
-                    <button type="submit" className='mt-6 ml-24'>Enviar</button>
+                  
+                    <button type="submit" className="btn"  id="customBtn">Enviar</button>
                     <Link to='/'>
-                    <button>Menu</button>
+                    <button className="btn"  id="customBtn">Menu</button>
                      </Link>
-                </div>      
+                    
             </form>
         </>
     )

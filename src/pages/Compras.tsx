@@ -59,38 +59,50 @@ export function Compras() {
 
     return (
         <>
-           <form onSubmit={handleSubmit}>
-                <div className="container bg-gray-300 mx-auto h-96 w-96">
+           <form onSubmit={handleSubmit} className="form-container">
+                <div className="form-group">
                     
-                    <label className='ml-12 text-black' htmlFor="nome">Código: </label>
+                    <label  htmlFor="nome">Código: </label>
                     <input onChange={pegarCodigo} type="text" className='nome  border-50 outline-0' name='nome' placeholder='Código da Compra'/>
+                    </div>
                     <br />
-                    <br />
-                    <label className='ml-9 text-black' htmlFor="localizacao">Descrição: </label>
+                   
+                    <div className="form-group">
+                    <label  htmlFor="localizacao">Descrição: </label>
                     <input onChange={pegarDescricao} className='localizacao border-50  outline-0' type="text" name='localizacao' placeholder='Descrição da Compra'/>
+                   </div>
                     <br />
-                    <br />
-                    <label className=' text-black' htmlFor="capacidade">Quantidade de produtos: </label>
+                  
+                    <div className="form-group">
+                    <label  htmlFor="capacidade">Quantidade de produtos: </label>
                     <input onChange={pegarQuantidade} className='capacidade  border-50 outline-0' type="number" name='capacidade' placeholder='Quantidade de produtos' />
+                   </div>
                     <br />
-                    <br />
-                    <label className=' text-black' htmlFor="Fabricante">Fabricante: </label>
+                    
+                    <div className="form-group">
+                    <label  htmlFor="Fabricante">Fabricante: </label>
                     <input onChange={pegarFabricante} className='responsavel border-none outline-0' type="text" name='fabricante' placeholder='Fabricante:'/>
+                   </div>
                     <br />
-                    <br />
-                    <label className='ml-16 mr-1 text-black' htmlFor="preco">Preço</label>
+                   
+                    <div className="form-group">
+                    <label  htmlFor="preco">Preço</label>
                     <input onChange={pegarPreco} className='preco border-none outline-0' type="number" name='preco' placeholder='Preço:'/>
+                    </div>
                     <br />
+                   
+                    <div className="form-group">
+                    <label  htmlFor="data">Data: </label>
+                    <input onChange={pegarData} className='data border-none outline-0' type="text" name='data' placeholder='Data da compra:'/>
+                    </div>
                     <br />
-                    <label className='ml-8 text-black' htmlFor="data">Data</label>
-                    <input onChange={pegarData} className='data border-none mb-4 outline-0' type="text" name='data' placeholder='Data da compra:'/>
-                    <br />
-                    <br />
-                    <button type="submit" className='mt-6 ml-24'>Enviar</button>
+                    
+
+                    <button type="submit" className="btn"  id="customBtn">Enviar</button>
                     <Link to='/'>
-                    <button>Menu</button>
+                    <button className="btn"  id="customBtn">Menu</button>
                      </Link>
-                </div>      
+                     
             </form>
 
         </>

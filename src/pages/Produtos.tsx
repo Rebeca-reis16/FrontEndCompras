@@ -57,34 +57,40 @@ export function Produtos(){
     return(
         <>
             
-            <form onSubmit={handleSubmit}>
-                <div className="container bg-gray-300 mx-auto h-96 w-96">
+            <form onSubmit={handleSubmit} className="form-container">
+                <div  className="form-group">
                     
-                    <label className='ml-12 text-black' htmlFor="produto">Produto</label>
+                    <label  htmlFor="produto">Produto: </label>
                     <input onChange={pegarProduto} type="text" className='border-50 outline-0' name='produto' placeholder='Nome do produto:'/>
+                    </div>
                     <br/>
-                    <br/>
-                    <label className='ml-9 text-black' htmlFor="descri">Descrição</label>
+                 <div className="form-group">
+                    <label   htmlFor="descri">Descrição: </label>
                     <input onChange={pegarDescri} className='border-50  outline-0' type="text" name='descri' placeholder='Descrição:'/>
-                    <br/>
+                    </div>
                     <br />
-                    <label className='ml-8 text-black' htmlFor="fabricante">Fabricante</label>
-                    <input onChange={pegarFabricante} className='senha mb-4 border-none outline-0' type="text" name='fabricante' placeholder='Nome do fabricante:'/>
-                    <br/>
+                <div className="form-group">
+                    <label   htmlFor="fabricante">Fabricante: </label>
+                    <input onChange={pegarFabricante} className='senha  border-none outline-0' type="text" name='fabricante' placeholder='Nome do fabricante:'/>
+                    </div>
                     <br />
-                    <label className='ml-6 text-black' htmlFor="qtda">Quantidade</label>
-                    <input onChange={pegarQtda} className='senha border-none mb-4 outline-0' type="number" name='qtda' placeholder='Quantidade:'/>
+                <div className="form-group">
+                    <label   htmlFor="qtda">Quantidade: </label>
+                    <input onChange={pegarQtda} className='senha border-none  outline-0' type="number" name='qtda' placeholder='Quantidade:'/>
+                    </div>
                     <br/>
-                    <br />
-                    <label className='ml-16 mr-1 text-black' htmlFor="preco">Preço</label>
+                <div className="form-group">
+                    <label  htmlFor="preco">Preço: </label>
                     <input onChange={pegarPreco} className='senha border-none outline-0' type="number" name='preco' placeholder='Preço:'/>
-                    <br/>
+                   </div>
                     <br />
-                    <button type="submit" className='mt-6 ml-24'>Enviar</button>
+
+                    <button type="submit" className="btn"  id="customBtn">Enviar</button>
                     <Link to='/'>
-                    <button>Menu</button>
+                    <button  className="btn"  id="customBtn">Menu</button>
                      </Link>
-                </div>      
+
+            
             </form>
         </>
     )
